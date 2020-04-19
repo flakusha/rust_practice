@@ -12,5 +12,5 @@ fn main() {
     //println!("Hello, world!");
     //input_sum();
     //input_sum_array();
-    sum_array_target();
+    sum_pair_to_target_io();
 }
