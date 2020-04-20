@@ -1,4 +1,7 @@
 use std::io;
+use std::collections::HashMap;
+
+#[allow(dead_code)]
 
 pub fn sum_pair_to_target_io() -> Vec<i32> {
     
@@ -55,4 +58,31 @@ pub fn sum_pair_to_target_io() -> Vec<i32> {
     let result = initial_vec.two_sum();
     println!("{:?}", result);
     result
+}
+
+pub fn sum_pair_to_traget_hash() {
+    struct Solution {
+        nums: Vec<i32>,
+        target: i32,
+    }
+    
+    impl Solution {
+        pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+            //  Hash map for fast calls instead of iterators
+            let mut checked = HashMap::new();
+            // Convert Vec to iterator to scan values
+            let nums_iter = nums.iter().enumerate();
+            // Scan the input Vec for values
+            // if target - value = some_value in Vec the solution is found
+            for (i, item) in  nums_iter {
+                let test_value = target - item;
+                if checked.contains_key(&test_value) {
+                    // Return must be Vec<i32>
+                    return vec![checked[&test_value] as i32, i as i32];
+                }
+                checked.insert(item, i);
+            }
+            unreachable!()
+        }
+    }
 }
