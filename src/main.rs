@@ -1,10 +1,10 @@
-#[allow(unused_imports)]
-#[allow(dead_code)]
+// #[allow(unused_imports)]
+// #[allow(dead_code)]
 
 // mod sum;
 // mod sum_array;
 // mod sum_array_target;
-mod reverse_integer;
+// mod reverse_integer;
 mod integer_max;
 mod palindrome;
 

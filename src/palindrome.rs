@@ -52,9 +52,3 @@ impl Solution {
 Solution{x: main_input}.is_palindrome_self()
 
 }
-
-#[cfg(test)]
-    #[test]
-    fn test() {
-        assert_eq!(check_palindrome(121), true)
-    }
