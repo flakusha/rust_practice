@@ -1,3 +1,5 @@
+/// Algorithm sums two linked lists of integers in reversed order
+
 pub fn add_two_numbers_linked_list(input_01: Vec<i32>, input_02: Vec<i32>) {
 
 // Definition for singly-linked list.

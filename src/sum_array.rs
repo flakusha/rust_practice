@@ -1,3 +1,5 @@
+/// Algorithm takes two arrays from keyboard and sums them
+
 use std::io;
 
 pub fn input_sum_array() {

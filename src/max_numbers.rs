@@ -1,3 +1,5 @@
+/// Just prints maximum values for numbers
+
 pub fn print_integer_max_values() {
     println!("{:?}", i8::max_value());
     println!("{:?}", i8::min_value());

@@ -1,3 +1,5 @@
+/// Algorhitm finds the pair of integers to sum up to the target
+
 use std::io;
 use std::collections::HashMap;
 
@@ -11,10 +13,7 @@ pub fn sum_pair_to_target_io() -> Vec<i32> {
     }
     
     impl Solution {
-        //pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         pub fn two_sum(&self) -> Vec<i32> {
-            //let mut iter_nums = self.nums.iter();
-            //let mut intermediate: Vec<i32> = vec![];
             if self.nums.len() < 2 {panic!("Nothing to sum up!")}
 
             let mut result: Vec<i32> = vec![];
@@ -40,8 +39,8 @@ pub fn sum_pair_to_target_io() -> Vec<i32> {
     }
     
     // Processing the input
-    let mut str_00 = String::from("[2,7,11,15]");//String::new();
-    let mut str_01 = String::from("9");//String::new();
+    let mut str_00 = String::from("[2,7,11,15]");
+    let mut str_01 = String::from("9");
     // Convert any type of input data to Vec<i32>, clean the string from char
     io::stdin().read_line(&mut str_00).ok().expect("read error");
 
@@ -60,6 +59,7 @@ pub fn sum_pair_to_target_io() -> Vec<i32> {
     result
 }
 
+// Solution made with HasMap - faster and more correct
 pub fn sum_pair_to_traget_hash() {
     struct Solution {
         nums: Vec<i32>,

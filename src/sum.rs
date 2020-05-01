@@ -1,3 +1,5 @@
+/// Module sums two inputs
+
 use std::io;
 
 pub fn input_sum() {
@@ -15,6 +17,5 @@ pub fn input_sum() {
 
     // print the sum 
     println!("{}", num_01 + num_02);
-    println!("No one here but us, chickens!");
 }
 

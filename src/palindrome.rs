@@ -1,7 +1,8 @@
-// Reverse:
-// Take number.len() - 1 and sum with number.len() - 2
-// Palindrome:
-// true if not negative and num_orig = num_rev
+/// Algorhitm checs that two integers are palindromes
+/// Reverse:
+/// Take number.len() - 1 and sum with number.len() - 2
+/// Palindrome:
+/// true if not negative and num_orig = num_rev
 
 pub fn check_palindrome(main_input: i32) -> bool {
 

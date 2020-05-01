@@ -1,6 +1,6 @@
+/// Algorithm reverses the i32 except input is bigger than i32 max value
 
 pub fn reverse_input_i32(main_input:i32) -> i32 {
-// No identation, because it's for the site
 
 struct Solution {
     x: i32,
