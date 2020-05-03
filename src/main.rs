@@ -31,7 +31,7 @@ fn main() {
     // println!("{}", check_palindrome(121));
     // add_two_numbers_linked_list(vec![1,2,3], vec![1,2,3]);
     // common_prefix_example();
-    let mut ordered_vector = vec![1, 1, 2, 2, 3, 3, 3];
+    let mut ordered_vector = vec![1, 1, 2, 2, 2, 3, 3, 3, 3];
     println!("Ordered vector:{0:?}; length: {1}", ordered_vector,
     ordered_vector.len());
     let length = remove_duplicates_vec(&mut ordered_vector);
