@@ -9,6 +9,7 @@ impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
         if nums.len() == 0 {return 0i32;}
         else if nums[0] > target {return 0i32;}
+        else if nums[nums.len() - 1] < target {return nums.len() as i32;}
         else {
             let mut pos = 0;
             loop {
