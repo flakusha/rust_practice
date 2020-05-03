@@ -8,7 +8,8 @@
 // mod max_numbers;
 // mod palindrome;
 // mod two_sum_linked_list;
-mod longest_prefix;
+// mod longest_prefix;
+mod sorted_list_without_dupl_len;
 
 // use sum::*;
 // use sum_array::*;
@@ -17,7 +18,8 @@ mod longest_prefix;
 // use max_numbers::print_integer_max_values;
 // use palindrome::*;
 // use two_sum_linked_list::*;
-use longest_prefix::*;
+// use longest_prefix::*;
+use sorted_list_without_dupl_len::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -28,5 +30,11 @@ fn main() {
     // print_integer_max_values();
     // println!("{}", check_palindrome(121));
     // add_two_numbers_linked_list(vec![1,2,3], vec![1,2,3]);
-    common_prefix_example();
+    // common_prefix_example();
+    let mut ordered_vector = vec![1, 1, 2, 2, 3, 3, 3];
+    println!("Ordered vector:{0:?}; length: {1}", ordered_vector,
+    ordered_vector.len());
+    let length = remove_duplicates_vec(&mut ordered_vector);
+    println!("Ordered vector:{0:?}; length: {1}; duplicates removed",
+    ordered_vector, length);
 }
