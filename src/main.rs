@@ -9,7 +9,8 @@
 // mod palindrome;
 // mod two_sum_linked_list;
 // mod longest_prefix;
-mod sorted_list_without_dupl_len;
+// mod sorted_list_without_dupl_len;
+mod remove_element_from_list;
 
 // use sum::*;
 // use sum_array::*;
@@ -19,7 +20,8 @@ mod sorted_list_without_dupl_len;
 // use palindrome::*;
 // use two_sum_linked_list::*;
 // use longest_prefix::*;
-use sorted_list_without_dupl_len::*;
+// use sorted_list_without_dupl_len::*;
+use remove_element_from_list::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -31,10 +33,19 @@ fn main() {
     // println!("{}", check_palindrome(121));
     // add_two_numbers_linked_list(vec![1,2,3], vec![1,2,3]);
     // common_prefix_example();
-    let mut ordered_vector = vec![1, 1, 2, 2, 2, 3, 3, 3, 3];
-    println!("Ordered vector:{0:?}; length: {1}", ordered_vector,
-    ordered_vector.len());
-    let length = remove_duplicates_vec(&mut ordered_vector);
-    println!("Ordered vector:{0:?}; length: {1}; duplicates removed",
-    ordered_vector, length);
+
+    // sorted_list_without_dupl_len
+    // let mut ordered_vector = vec![1, 1, 2, 2, 2, 3, 3, 3, 3];
+    // println!("Ordered vector:{0:?}; length: {1}", ordered_vector,
+    // ordered_vector.len());
+    // let length = remove_duplicates_vec(&mut ordered_vector);
+    // println!("Ordered vector:{0:?}; length: {1}; duplicates removed",
+    // ordered_vector, length);
+
+    // remove_element_from_list
+    let mut vector: Vec<i32> = vec![0, 1, 2, 2, 3, 0, 4, 2];
+    let target: i32 = 2;
+    println!("Vector: {0:?}; Target: {1}", vector, target);
+    let modified_len = remove_target(&mut vector, target);
+    println!("Vector: {0:?}; Length: {1}", vector, modified_len);
 }
