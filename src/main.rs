@@ -10,7 +10,8 @@
 // mod two_sum_linked_list;
 // mod longest_prefix;
 // mod sorted_list_without_dupl_len;
-mod remove_element_from_list;
+// mod remove_element_from_list;
+mod detect_insertion;
 
 // use sum::*;
 // use sum_array::*;
@@ -21,7 +22,8 @@ mod remove_element_from_list;
 // use two_sum_linked_list::*;
 // use longest_prefix::*;
 // use sorted_list_without_dupl_len::*;
-use remove_element_from_list::*;
+// use remove_element_from_list::*;
+use detect_insertion::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -43,9 +45,13 @@ fn main() {
     // ordered_vector, length);
 
     // remove_element_from_list
-    let mut vector: Vec<i32> = vec![0, 1, 2, 2, 3, 0, 4, 2];
-    let target: i32 = 2;
-    println!("Vector: {0:?}; Target: {1}", vector, target);
-    let modified_len = remove_target(&mut vector, target);
-    println!("Vector: {0:?}; Length: {1}", vector, modified_len);
+    // let mut vector: Vec<i32> = vec![0, 1, 2, 2, 3, 0, 4, 2];
+    // let target: i32 = 2;
+    // println!("Vector: {0:?}; Target: {1}", vector, target);
+    // let modified_len = remove_target(&mut vector, target);
+    // println!("Vector: {0:?}; Length: {1}", vector, modified_len);
+
+    // detect insertion
+    let result = detect_insertion(vec![1,3,5,6], 102);
+    println!("{}", result);
 }
