@@ -11,7 +11,8 @@
 // mod longest_prefix;
 // mod sorted_list_without_dupl_len;
 // mod remove_element_from_list;
-mod detect_insertion;
+// mod detect_insertion;
+mod string_to_int;
 
 // use sum::*;
 // use sum_array::*;
@@ -23,7 +24,8 @@ mod detect_insertion;
 // use longest_prefix::*;
 // use sorted_list_without_dupl_len::*;
 // use remove_element_from_list::*;
-use detect_insertion::*;
+// use detect_insertion::*;
+use string_to_int::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -52,6 +54,8 @@ fn main() {
     // println!("Vector: {0:?}; Length: {1}", vector, modified_len);
 
     // detect insertion
-    let result = detect_insertion(vec![1,3,5,6], 102);
-    println!("{}", result);
+    // let result = detect_insertion(vec![1,3,5,6], 102);
+    // println!("{}", result);
+
+    println!("{}", string_to_int(String::from("-0 123")));
 }
