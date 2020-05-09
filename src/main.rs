@@ -12,7 +12,7 @@
 // mod sorted_list_without_dupl_len;
 // mod remove_element_from_list;
 // mod detect_insertion;
-mod string_to_int;
+// mod string_to_int;
 
 // use sum::*;
 // use sum_array::*;
@@ -25,7 +25,7 @@ mod string_to_int;
 // use sorted_list_without_dupl_len::*;
 // use remove_element_from_list::*;
 // use detect_insertion::*;
-use string_to_int::*;
+// use string_to_int::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -57,5 +57,5 @@ fn main() {
     // let result = detect_insertion(vec![1,3,5,6], 102);
     // println!("{}", result);
 
-    println!("{}", string_to_int(String::from("-0 123")));
+    // println!("{}", string_to_int(String::from("-0 123")));
 }
