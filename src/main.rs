@@ -14,8 +14,8 @@
 // mod detect_insertion;
 // mod string_to_int;
 // mod vector_plus_one;
-mod missing_positive_integer;
-// mod histogram_largest_rectangle_area;
+// mod missing_positive_integer;
+mod histogram_largest_rectangle_area;
 
 // use sum::*;
 // use sum_array::*;
@@ -30,8 +30,8 @@ mod missing_positive_integer;
 // use detect_insertion::*;
 // use string_to_int::*;
 // use vector_plus_one::*;
-use missing_positive_integer::*;
-// use histogram_largest_rectangle_area::*;
+// use missing_positive_integer::*;
+use histogram_largest_rectangle_area::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -70,9 +70,9 @@ fn main() {
     // println!("{:?}", vector_plus_one(vec![9,9,9,9]))
 
     // Find minimal missing integer in array
-    minimal_missing_positive(vec![10, 20, 30]);
+    // minimal_missing_positive(vec![10, 20, 30]);
 
-    // Find largest area in rectangle histogram
-    // let area = histogram_largest_area(vec![1,2,3,4,5,6]);
-    // println!("{}", area);
+    //Find largest area in rectangle histogram
+    let area = histogram_largest_area(vec![2,1,1,6,7,1,2,2]);
+    println!("{}", area);
 }
