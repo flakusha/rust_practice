@@ -73,7 +73,6 @@ impl Solution {
                     }
 
                     if scan_left && scan_right {
-                        println!("Bar: {}, Serie: {}", bar, ser);
                         bar_series.push(BarSerie{h: bar, l: ser,});
                         break;
                     }
