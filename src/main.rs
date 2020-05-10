@@ -13,6 +13,7 @@
 // mod remove_element_from_list;
 // mod detect_insertion;
 // mod string_to_int;
+mod vector_plus_one;
 
 // use sum::*;
 // use sum_array::*;
@@ -26,6 +27,7 @@
 // use remove_element_from_list::*;
 // use detect_insertion::*;
 // use string_to_int::*;
+use vector_plus_one::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -57,5 +59,9 @@ fn main() {
     // let result = detect_insertion(vec![1,3,5,6], 102);
     // println!("{}", result);
 
+    // Convert string to int
     // println!("{}", string_to_int(String::from("-0 123")));
+
+    // Add 1 to vector
+    println!("{:?}", vector_plus_one(vec![9,9,9,9]))
 }
