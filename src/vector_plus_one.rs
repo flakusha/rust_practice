@@ -12,7 +12,6 @@ impl Solution {
         
         let mut add_val = true;
         let mut index = digits.len() - 1;
-        println!("{:?}", digits);
 
         loop {
             if add_val == false {break;}
