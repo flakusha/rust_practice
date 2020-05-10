@@ -28,7 +28,6 @@ impl Solution {
             else if add_val == false && digits[index] == 0 {
                digits.remove(index);
             }
-            println!("{} : {:?} : {:?}", index, add_val, digits);
         }
         digits
     }
