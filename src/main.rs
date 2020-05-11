@@ -15,7 +15,9 @@
 // mod string_to_int;
 // mod vector_plus_one;
 // mod missing_positive_integer;
-mod histogram_largest_rectangle_area;
+// mod histogram_largest_rectangle_area;
+// mod histogram_largest_rectangle_area_simple;
+mod binary_string_sum;
 
 // use sum::*;
 // use sum_array::*;
@@ -31,7 +33,9 @@ mod histogram_largest_rectangle_area;
 // use string_to_int::*;
 // use vector_plus_one::*;
 // use missing_positive_integer::*;
-use histogram_largest_rectangle_area::*;
+// use histogram_largest_rectangle_area::*;
+// use histogram_largest_rectangle_area_simple::*;
+use binary_string_sum::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -72,7 +76,14 @@ fn main() {
     // Find minimal missing integer in array
     // minimal_missing_positive(vec![10, 20, 30]);
 
-    //Find largest area in rectangle histogram
-    let area = histogram_largest_area(vec![2,1,1,6,7,1,2,2]);
-    println!("{}", area);
+    // Find largest area in rectangle histogram
+    // let area = histogram_largest_area(vec![2,1,1,6,7,1,2,2]);
+    // println!("{}", area);
+
+    // Sum up two binary strings
+    let two_binary_string_sum = binary_string_sum(
+        String::from("111"),
+        String::from("11")
+    );
+    println!("{:?}", two_binary_string_sum);
 }
