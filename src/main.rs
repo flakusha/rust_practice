@@ -17,7 +17,8 @@
 // mod missing_positive_integer;
 // mod histogram_largest_rectangle_area;
 // mod histogram_largest_rectangle_area_simple;
-mod binary_string_sum;
+// mod binary_string_sum;
+mod two_sum_sorted;
 
 // use sum::*;
 // use sum_array::*;
@@ -35,7 +36,8 @@ mod binary_string_sum;
 // use missing_positive_integer::*;
 // use histogram_largest_rectangle_area::*;
 // use histogram_largest_rectangle_area_simple::*;
-use binary_string_sum::*;
+// use binary_string_sum::*;
+use two_sum_sorted::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -81,9 +83,15 @@ fn main() {
     // println!("{}", area);
 
     // Sum up two binary strings
-    let two_binary_string_sum = binary_string_sum(
-        String::from("111"),
-        String::from("11")
-    );
-    println!("{:?}", two_binary_string_sum);
+    // let two_binary_string_sum = binary_string_sum(
+    //     String::from("111"),
+    //     String::from("11")
+    // );
+    // println!("{:?}", two_binary_string_sum);
+
+    // Sum up two sorted Vec<i32>
+    let two_sum_sorted_vec: Vec<i32> = add_two_numbers_sorted(
+        vec![4,4,6,6,6,8,9,56,90,90],
+        146);
+    println!("{:?}", two_sum_sorted_vec);
 }
