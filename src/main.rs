@@ -18,7 +18,8 @@
 // mod histogram_largest_rectangle_area;
 // mod histogram_largest_rectangle_area_simple;
 // mod binary_string_sum;
-mod two_sum_sorted;
+// mod two_sum_sorted;
+mod sqrt_int;
 
 // use sum::*;
 // use sum_array::*;
@@ -37,7 +38,8 @@ mod two_sum_sorted;
 // use histogram_largest_rectangle_area::*;
 // use histogram_largest_rectangle_area_simple::*;
 // use binary_string_sum::*;
-use two_sum_sorted::*;
+// use two_sum_sorted::*;
+use sqrt_int::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -90,8 +92,12 @@ fn main() {
     // println!("{:?}", two_binary_string_sum);
 
     // Sum up two sorted Vec<i32>
-    let two_sum_sorted_vec: Vec<i32> = add_two_numbers_sorted(
-        vec![4,4,6,6,6,8,9,56,90,90],
-        146);
-    println!("{:?}", two_sum_sorted_vec);
+    // let two_sum_sorted_vec: Vec<i32> = add_two_numbers_sorted(
+    //     vec![4,4,6,6,6,8,9,56,90,90],
+    //     146);
+    // println!("{:?}", two_sum_sorted_vec);
+
+    // Return integer part of sqrt
+    let sqrt_int_result = integer_sqrt(i32::MAX - 1);
+    println!("{}", sqrt_int_result);
 }
