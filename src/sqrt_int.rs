@@ -34,17 +34,39 @@ output
 #[cfg(test)]
 mod tests{
     use super::*;
+
     #[test]
     fn test_zero() {
         let test_zero = integer_sqrt(0);
-        assert_eq!(test_zero, 0);
+        debug_assert_eq!(test_zero, 0);
     }
 
     #[test]
-    fn test_i32_positive_range() {
-        for value in 0..i32::MAX {
-            let test_i32_pos_range = integer_sqrt(value);
-            assert_eq!(test_i32_pos_range, (value as f32).sqrt().floor() as i32);
-        }
+    fn test_big_value() {
+        let big_value = integer_sqrt(i32::MAX);
+        debug_assert_eq!(big_value, 46340);
+    }
+
+    #[test]
+    fn test_negative_value() {
+        let negative_value = integer_sqrt(-7);
+        debug_assert_eq!(negative_value, 0);
+    }
+
+    #[test]
+    fn test_less_than_four() {
+        let less_than_four_00 = integer_sqrt(1);
+        let less_than_four_01 = integer_sqrt(2);
+        let less_than_four_02 = integer_sqrt(3);
+        debug_assert_eq!(less_than_four_00, 1);
+        debug_assert_eq!(less_than_four_01, 1);
+        debug_assert_eq!(less_than_four_02, 1); 
+    }
+
+    #[test]
+    fn test_middle_case() {
+        let middle_case = integer_sqrt(510);
+        debug_assert_eq!(middle_case,
+        (510f32).sqrt().floor() as i32);
     }
 }
