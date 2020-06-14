@@ -7,7 +7,7 @@
 // mod reverse_integer;
 // mod max_numbers;
 // mod palindrome;
-mod two_sum_linked_list;
+
 // mod longest_prefix;
 // mod sorted_list_without_dupl_len;
 // mod remove_element_from_list;
@@ -20,7 +20,7 @@ mod two_sum_linked_list;
 // mod binary_string_sum;
 // mod two_sum_sorted;
 // mod sqrt_int;
-mod remove_duplicates_linked_list;
+
 
 // use sum::*;
 // use sum_array::*;
@@ -28,7 +28,6 @@ mod remove_duplicates_linked_list;
 // use reverse_integer::*;
 // use max_numbers::print_integer_max_values;
 // use palindrome::*;
-use two_sum_linked_list::*;
 // use longest_prefix::*;
 // use sorted_list_without_dupl_len::*;
 // use remove_element_from_list::*;
@@ -41,6 +40,11 @@ use two_sum_linked_list::*;
 // use binary_string_sum::*;
 // use two_sum_sorted::*;
 // use sqrt_int::*;
+
+// Use these modules together
+mod two_sum_linked_list;
+mod remove_duplicates_linked_list;
+use two_sum_linked_list::*;
 use remove_duplicates_linked_list::*;
 
 fn main() {
@@ -51,7 +55,7 @@ fn main() {
     // reverse_input_i32(-155000);
     // print_integer_max_values();
     // println!("{}", check_palindrome(121));
-    add_two_numbers_linked_list(vec![1,2,3], vec![1,2,3]);
+    // add_two_numbers_linked_list(vec![1,2,3], vec![1,2,3]);
     // common_prefix_example();
 
     // sorted_list_without_dupl_len
@@ -105,5 +109,5 @@ fn main() {
 
     // Remove duplicates from linked list
     let no_dupl_ll =
-    rem_dupl_ll(vec![1,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,5,6,6,7,8]);
+    rem_dupl_ll(vec![1,1,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,5,6,6,7,8]);
 }
