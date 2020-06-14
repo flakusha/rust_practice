@@ -20,7 +20,7 @@
 // mod binary_string_sum;
 // mod two_sum_sorted;
 // mod sqrt_int;
-
+mod merge_sorted_arrays;
 
 // use sum::*;
 // use sum_array::*;
@@ -42,10 +42,12 @@
 // use sqrt_int::*;
 
 // Use these modules together
-mod two_sum_linked_list;
-mod remove_duplicates_linked_list;
-use two_sum_linked_list::*;
-use remove_duplicates_linked_list::*;
+// mod two_sum_linked_list;
+// mod remove_duplicates_linked_list;
+// use two_sum_linked_list::*;
+// use remove_duplicates_linked_list::*;
+
+use merge_sorted_arrays::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -108,6 +110,12 @@ fn main() {
     // println!("{}", sqrt_int_result);
 
     // Remove duplicates from linked list
-    let no_dupl_ll =
-    rem_dupl_ll(vec![1,1,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,5,6,6,7,8]);
+    // let no_dupl_ll =
+    // rem_dupl_ll(vec![1,1,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,5,6,6,7,8]);
+
+    // Merge sorted arrays
+    merge_two_arrays(&mut vec![1,2,3], &mut vec![4,5,6]);
+    merge_two_arrays(&mut vec![4,5,6], &mut vec![1,2,3]);
+    merge_two_arrays(&mut vec![0,0,0,1,2,3,4],
+    &mut vec![0,0,0,0,3,4,5,6]);
 }
