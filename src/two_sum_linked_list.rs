@@ -19,21 +19,6 @@ impl ListNode {
   }
 }
 
-// Convert vector to linked list
-pub fn vec_to_ll(input_vector: Vec<i32>) -> LinkedList {
-  // Empty linked list in the beginning
-  let mut ll = None;
-  // Iterate in reverse through vector
-  for &vector in input_vector.iter().rev() {
-    // Add nodes one by one
-    let mut node = ListNode::new(vector);
-    node.next = ll;
-    ll = Some(Box::new(node));
-  }
-  // Return the result
-  ll
-}
-
 // Shortcut
 type LinkedList = Option<Box<ListNode>>;
 
@@ -94,4 +79,19 @@ impl Solution {
 let mut result = Solution{l1: vec_to_ll(input_01), l2: vec_to_ll(input_02)}
 .add_two_numbers_self();
 println!("{:?}", result);
+}
+
+// Convert vector to linked list
+pub fn vec_to_ll(input_vector: Vec<i32>) -> LinkedList {
+  // Empty linked list in the beginning
+  let mut ll = None;
+  // Iterate in reverse through vector
+  for &vector in input_vector.iter().rev() {
+    // Add nodes one by one
+    let mut node = ListNode::new(vector);
+    node.next = ll;
+    ll = Some(Box::new(node));
+  }
+  // Return the result
+  ll
 }
