@@ -20,7 +20,8 @@
 // mod binary_string_sum;
 // mod two_sum_sorted;
 // mod sqrt_int;
-mod merge_sorted_arrays;
+// mod merge_sorted_arrays;
+mod pascal_triangle;
 
 // use sum::*;
 // use sum_array::*;
@@ -47,7 +48,8 @@ mod merge_sorted_arrays;
 // use two_sum_linked_list::*;
 // use remove_duplicates_linked_list::*;
 
-use merge_sorted_arrays::*;
+// use merge_sorted_arrays::*;
+use pascal_triangle::*;
 
 fn main() {
     // println!("Hello, world!");
@@ -114,8 +116,19 @@ fn main() {
     // rem_dupl_ll(vec![1,1,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,5,6,6,7,8]);
 
     // Merge sorted arrays
-    merge_two_arrays(&mut vec![1,2,3], &mut vec![4,5,6]);
-    merge_two_arrays(&mut vec![4,5,6], &mut vec![1,2,3]);
-    merge_two_arrays(&mut vec![0,0,0,1,2,3,4],
-    &mut vec![0,0,0,0,3,4,5,6]);
+    // merge_two_arrays(&mut vec![1,2,3], &mut vec![4,5,6]);
+    // merge_two_arrays(&mut vec![4,5,6], &mut vec![1,2,3]);
+    // merge_two_arrays(&mut vec![0,0,0,1,2,3,4],
+    // &mut vec![0,0,0,0,3,4,5,6]);
+
+    // Calculate the Pascal triangle
+    let rows_num = 34;
+    let pascal_triangle = calculate_pascal_triangle(rows_num);
+    for vector in pascal_triangle {
+        for item in vector {
+            print!(" {} ", item);
+        }
+        println!();
+        //println!("{:^width$?}", vector, width = (rows_num as usize) * 2 + 1);
+    }
 }
